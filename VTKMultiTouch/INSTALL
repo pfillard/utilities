@@ -1,0 +1,18 @@
+Instructions:
+
+svn checkout --force svn://scm.gforge.inria.fr/svn/parietal-public/Utilities/VTKMultiTouch path_to_VTK_source
+cd path_to_VTK_source
+svn revert -R .
+
+then compile VTK as usual.
+
+Information:
+
+option --force is mandatory to be able to checkout code in an existing directory.
+
+svn revert is mandatory as VTKMultiTouch files are in general replaced by existing ones coming from VTK.
+
+
+Enjoy!
+
+Pierre Fillard (pierre.fillard@inria.fr)
